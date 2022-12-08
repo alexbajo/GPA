@@ -56,7 +56,7 @@ namespace ASPNCMVC.Controllers
         }
         [Authorize]
         [HttpPost(Name = "UpdateProducto")]
-        [SwaggerOperation(Summary = "Actualizar producto", Description = "Actualizar producto con el modelo de producto")]
+        [SwaggerOperation(Summary = "Actualizar productos yuhu", Description = "Actualizar producto con el modelo de producto")]
         public bool Post(ProductoModel producto)
         {
 
