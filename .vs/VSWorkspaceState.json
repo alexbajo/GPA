@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ASPNCMVC",
+    "\\ASPNCMVC\\Models"
   ],
-  "SelectedNode": "\\C:\\Users\\Alejandro Bajo\\Desktop\\GPA\\ASPNCMVC",
+  "SelectedNode": "\\ASPNCMVC\\Models\\ProductoModel.cs",
   "PreviewInSolutionExplorer": false
 }
