@@ -35,7 +35,7 @@ namespace ASPNCMVC.Controllers
                 listaProductos = connection.Query<ProductoModel>("SELECT * FROM productos").ToList();
             }
 
-            
+            var std = "";
             return (codigo==0? listaProductos : listaProductos.Where(x=>x.IdProducto == codigo));
         }
 
