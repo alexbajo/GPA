@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ASPNCMVC",
-    "\\ASPNCMVC\\Models"
+    "\\ASPNCMVC\\Controllers"
   ],
-  "SelectedNode": "\\ASPNCMVC\\Models\\ProductoModel.cs",
+  "SelectedNode": "\\ASPNCMVC\\Controllers\\ProductoController.cs",
   "PreviewInSolutionExplorer": false
 }

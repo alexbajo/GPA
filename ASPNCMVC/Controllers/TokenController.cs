@@ -1,7 +1,9 @@
 ﻿using ASPNCMVC.Models;
+using Dapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using MySql.Data.MySqlClient;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -14,7 +16,39 @@ namespace ASPNCMVC.Controllers
         [AllowAnonymous]
         public IActionResult Index(string user,string password)
         {
+
+            string connStr = "Server=127.0.0.1;Database=gpabd;User Id=root;Password=;";
+            MySqlConnection conn = new MySqlConnection(connStr);
+            try
+            {
+                Console.WriteLine("Connecting to MySQL...");
+                conn.Open();
+
+                string sql = "SELECT * FROM productos";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    Console.WriteLine(rdr[0] + " -- " + rdr[1]);
+                }
+                rdr.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+            conn.Close();
+            Console.WriteLine("Done.");
+
+
+
+
+
+
             
+
             if (user == "gpa" && password == "gpa123")
             {
                 var MyConfig = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();

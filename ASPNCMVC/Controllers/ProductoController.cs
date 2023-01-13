@@ -30,7 +30,7 @@ namespace ASPNCMVC.Controllers
         public IEnumerable<ProductoModel> Get(int codigo)
         {
             List<ProductoModel> listaProductos = new List<ProductoModel>();
-            using (var connection = new MySqlConnection("Server=localhost;Database=gpabd;User Id=root;Password=;"))
+            using (var connection = new MySqlConnection("server=127.0.0.1;database=gpabd;uid=root;Password=;"))
             {
                 listaProductos = connection.Query<ProductoModel>("SELECT * FROM productos").ToList();
             }
@@ -45,7 +45,7 @@ namespace ASPNCMVC.Controllers
         public long Put(ProductoModel producto)
         {
 
-            using (var connection = new MySqlConnection("Server=localhost;Database=gpabd;User Id=root;Password=;"))
+            using (var connection = new MySqlConnection("Server=127.0.0.1;Database=gpabd;User Id=root;Password=;"))
             {
                 List<ProductoModel> lpm = new List<ProductoModel>();
                 lpm.Add(producto);
@@ -60,7 +60,7 @@ namespace ASPNCMVC.Controllers
         public bool Post(ProductoModel producto)
         {
 
-            using (var connection = new MySqlConnection("Server=localhost;Database=gpabd;User Id=root;Password=;"))
+            using (var connection = new MySqlConnection("Server=127.0.0.1;Database=gpabd;User Id=root;Password=;"))
             {
                 List<ProductoModel> lpm = new List<ProductoModel>();
                 lpm.Add(producto);
