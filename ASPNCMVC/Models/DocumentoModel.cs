@@ -1,7 +1,13 @@
-﻿namespace ASPNCMVC.Models
+﻿using Dapper.Contrib.Extensions;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ASPNCMVC.Models
 {
+
+    [Table("documentos")]
     public class DocumentoModel
     {
+        [ExplicitKey]
         public int IdDocumento { get; set; }
         public int NumeroDocumento { get; set; }
         public string SerieDocumento { get; set; }
