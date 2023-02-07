@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\abajo\source\repos\ASPNCMVC\ASPNCMVC\bin\Release\net6.0\publish\</_PublishTargetUrl>
-    <History>True|2022-11-24T16:39:58.3130983Z;True|2022-11-24T17:11:21.6615241+01:00;</History>
+    <_PublishTargetUrl>C:\Users\abajo\source\repos\alexbajo\GPA\ASPNCMVC\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-02-07T09:52:24.3638118Z;True|2023-02-07T10:48:05.3650880+01:00;True|2022-11-24T17:39:58.3130983+01:00;True|2022-11-24T17:11:21.6615241+01:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
